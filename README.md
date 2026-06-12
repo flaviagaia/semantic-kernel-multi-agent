@@ -2,7 +2,7 @@
 
 [🇧🇷 Português](#-português) · [🇺🇸 English](#-english)
 
-Python · Semantic Kernel ≥ 1.43 (Agent Framework) · OpenAI / Azure OpenAI
+Python 3.10+ · Semantic Kernel ≥ 1.43 (Agent Framework) · OpenAI / Azure OpenAI · MIT License
 
 ---
 

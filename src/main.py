@@ -68,6 +68,12 @@ def log_etapa(message: ChatMessageContent) -> None:
 
 
 async def main() -> None:
+    if not os.getenv("OPENAI_API_KEY"):
+        raise SystemExit(
+            "OPENAI_API_KEY não configurada. "
+            "Copie .env.example para .env e adicione sua chave."
+        )
+
     orquestracao = SequentialOrchestration(
         members=build_agents(),
         agent_response_callback=log_etapa,
